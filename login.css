@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*background:linear-gradient(#0007, rgba(114, 114, 114, 0.144)),url(https://codigoprensa.com/wp-content/uploads/2020/08/reapertura-hoteles-2.jpeg);*/
+    background-image:url(https://santamarta.travel/uploads/0000/2/2021/11/04/215686285.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  .login-caja {
+    width: 305px;
+    height: 405px;
+    background: #004e79;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 80px 40px;
+    box-shadow: 15px 15px 20px #00263ace;
+  }
+  
+  .login-caja .imagen {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: calc(43% - 50px);
+  }
+  
+  .login-caja h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-caja label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-caja .input2{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-caja .input2{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-caja .input3 {
+    margin-bottom:15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #d2b862;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-caja .input3:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #d2b862;
+  }
+  
+  .login-caja a {
+
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+  }
+  
+  .login-caja a:hover {
+    color: #d2b862;
+  }
