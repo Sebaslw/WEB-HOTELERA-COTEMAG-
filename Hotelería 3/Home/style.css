@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Exo+2:wght@500&family=Lato:ital,wght@1,700&family=Orelega+One&family=Roboto&display=swap');
+/* 
+
+font-family: 'Exo 2', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+  
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+  
+.logo {
+  width: 130px;
+  height: 130px;
+  margin-top: 50px;
+  position: static;
+  cursor: pointer;
+  justify-content: right;
+}
+.content h1{
+  color: #ffce2c;
+  justify-content: right;
+}
+  
+  .content ul {
+  margin-top: 20px;
+  list-style: none;
+  padding: 5px;
+  margin-right: 10px;
+  
+}
+  
+.content ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #e0b524;
+  border-radius: 50px;
+  padding: 10px;
+     
+}
+  
+li a:hover {
+  transition: 0.5s;
+}
+  
+.content a:hover {
+  color: #ffffff;
+  background-color: #105c92;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+    
+}
+
+  
+.content {
+  font-family: sans-serif;
+  z-index: 5;
+  width: 75%;
+  position: absolute;
+  color: #105c92;
+  top: 30%;
+  left: 15%;
+  text-align: center;
+  background-color: #ffffff1f;
+  backdrop-filter: blur(0.2rem) ;
+  padding: 30px;
+  border-radius: 30px;
+}
+  
+.content h1{
+  font-size: 60px;
+  font-weight: 800;
+}
+.content P{
+  font-size: 25PX;
+}
+
+.container-carousel {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-color: #e0e0e0;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+  overflow: hidden;
+}
+.carruseles {
+  width: 500%;
+  height: 100%;
+  display: flex;
+
+  
+}
+
+.slider-section {
+  width: calc(100% / 5);
+  height: 100%;
+  position: relative;
+}
+.slider-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0.5, 0.5, 0.5, 0.5); 
+  /*z-index: 1;*/
+}
+.slider-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*z-index: 2;*/
+}
+
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff81;
+  transform: translate(0,-50%);
+  transition: .5s ease;
+  user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  
+  color: #1100ff;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+
+
+
+
+
+
+
+
+.art1{
+  display: flex;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 68, 255, 0)), url('');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  
+}
+.art1 .div1 h1{
+  color: #105c92;
+  text-transform: uppercase;
+  
+}
+.art1 .div1{
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  font-size: 18px;
+  width: 70%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.art1 .div1 h1{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
+  align-self: center;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 40px;
+  
+  width: 100%;
+  height: 70%;
+  gap: 30px;
+}
+.grid0{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  border-radius: 10px;
+  font-family: lato, sans-serif; 
+  color: #ffffff;
+
+}
+.grid1{ 
+  font-family: sans-serif; 
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 68, 255, 0.281)), url(https://cursostecnicos.com/wp-content/uploads/2018/04/HOTE-IN.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.grid1 h1{
+  color: white;
+  font-family: 'Domine', serif;
+}
+.grid2{
+  grid-column: 2/4;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 68, 255, 0.281)), url(https://img.freepik.com/foto-gratis/hombre-negocios-financiero-inspector-secretaria-haciendo-informe-calculo-o-comprobacion-balance-inspector-servicio-rentas-internas-revisando-documento-concepto-auditoria_1423-126.jpg?size=626&ext=jpg&ga=GA1.2.386372595.1697500800&semt=sph);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid3{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 68, 255, 0.281)), url(https://www.oirealestate.net/noticias-inmobiliarias/wp-content/uploads/2022/02/Depositphotos_29712363_m-2015.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid4{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 68, 255, 0.281)), url('https://mediterrani.com/wp-content/uploads/2020/04/Atencio%CC%81n-cliente-hotel.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid5{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 68, 255, 0.281)), url(https://www.sena.edu.co/es-co/transparencia/PublishingImages/contable.jpg?RenditionID=12);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid6{
+  grid-column: 1/3;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 68, 255, 0.281)), url(https://worldcampus.saintleo.edu/img/article/periodos-claves-de-la-historia-de-los-recursos-humanos.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid7{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 68, 255, 0.281)), url(https://www.yoestudio.cl/wp-content/uploads/2022/07/Administracion-hotelera-y-de-Turismo.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.art2{
+  background-image: linear-gradient(#005b88, #7abee0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  color: white;
+}
+.art2 .div2{
+  display: grid ;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  font-family: lato, sans-serif; 
+}
+.carda2{
+  text-align: center;
+  border-radius: 20px;
+  width: 300px;
+  margin: 30px;
+  padding: 25px;
+  border: solid 2px rgb(172, 172, 172);
+}
+
+
+.card1{
+  background-image: linear-gradient(rgba(0, 68, 255, 0.301), rgba(0, 68, 255, 0.342)), url('https://www.magisnet.com/wp-content/uploads/2022/05/estudiar.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.card2{
+  background-image: linear-gradient(rgba(0, 68, 255, 0.301), rgba(0, 68, 255, 0.342)), url('https://www.eltiempo.com/files/image_640_428/uploads/2020/08/16/5f39c82317bde.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.card3{
+  background-image: linear-gradient(rgba(0, 68, 255, 0.185), rgba(0, 68, 255, 0.212)), url('https://globalservices.com.pe/blog/public/postimg/atencion-al-cliente-global-services-20190125175648.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.art3{
+  background-color: #ececec;
+  font-family: sans-serif; 
+}
+.art3 .sec3{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.art3 .sec3 .div3 h1{
+  font-size: 30px;
+}
+.art3 .sec3 .img3 img{
+  width: 525px;
+  border-radius: 20px;
+  margin-right: -100px;
+}
+.art4 .sec4{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  font-family: lato, sans-serif; 
+}
+.art4 .sec4 .img4 img{
+  width: 525px;
+}
+.art4 .sec4 h1{
+  font-size: 25px;
+}
+.art5 .sec5{
+  font-family: lato, sans-serif; 
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  background-color:  #0f639ec2;
+  
+}
+.art5 .sec5 .img5 img{
+  width: 600px;
+}
+.art5 .sec5 .div5{
+  text-align: center;
+  width: 40%;
+  font-size: 22px;
+}
+.art6 .sec6{
+  font-family: lato, sans-serif; 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.art6 .sec6 h1{
+  font-size: 48px;
+}
+
+.foo0{
+  height: 150px;
+  background-color: #072235;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: lato, sans-serif; 
+
+  
+}
+
+.foo{
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: -50px;
+  
+  
+}
+.foo ul li{
+  background-color: #072235;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+}
+.foo1{
+  display: flex;
+  justify-content: center;
+  color: #e0b524;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  
+}
+.foo2{
+  font-size: 20px;
+  
+}
+.foo2 ul{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+ 
+}
+.foo2 ul li{
+  padding: 5px;
+  color: white;
+  list-style: circle;
+  
+}
+footer ul {
+  list-style: none;
+  display: flex;
+}
+footer ul li a{
+  font-size: 30px;
+}
+footer ul li a .fa-instagram{
+background-image: linear-gradient(#cf00e2,#fd00c6,#eb0000,#fffb00);
+border-radius: 5px;
+padding: 1px;
+}
+
+.subfoo{
+  background-color: #ffce2c;
+  height: 20px;
+  box-shadow: 0px 0px 5px 5px  rgba(255, 208, 0, 0.199)
+}
+
+/*
+@media (min-width:1613px){
+
+  
+}
+@media (min-width:1280px){
+
+  
+}
+@media (max-width:1280px){
+
+  
+}
+@media (min-width:1225px){
+
+
+}
+@media (max-width:960px){
+
+  
+}
+@media (max-width:929px){
+
+
+  
+}
+@media (max-width:600px){
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .content h1{
+    font-size: 3rem;
+  }
+  .content p{
+    font-size: 1.2em;
+  }
+  .articulo1 img{
+    display: none;
+  }
+  .articulo1 .adiv01{
+    width: 95%;
+    
+  }
+  .articulo0{
+    height: 600px;
+   
+  }
+  .articulo0 .div00 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 130px;
+  }
+  .articulo0 .div00 h1{
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .articulo0 img{
+    display: no;
+    width: 150px;
+  }
+}
+@media (max-width:400px){
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .content h1{
+    font-size: 2.5rem;
+  }
+  .content p{
+    font-size: 1.2em;
+  }
+  .articulo1 img{
+    display: none;
+  }
+  .articulo1 .adiv01{
+    width: 95%;
+    font-size: 14px;
+  }
+  .articulo1 .adiv01 h1{
+    text-align: center;
+    font-size: 2rem;
+  }
+  .articulo0{
+    height: 500px;
+   
+  }
+  .articulo0 .div00 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .articulo0 .div00 h1{
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .articulo0 img{
+    display: no;
+    width: 150px;
+  }
+}
+/*@media (max-width:390px){
+  .articulo0{
+    height: 600px;
+   
+  }
+  .articulo0 .div00 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  .articulo0 .div00 h1{
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .articulo0 .div0{
+    margin-bottom: -150px;
+  }
+  .articulo0 img{
+    display: no;
+    width: 150px;
+  }
+
+}
+@media (min-width:365px){
+  .articulo0{
+    height: 550px;
+   
+  }
+  .articulo0 .div00 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -100px;
+  }
+  .articulo0 .div00 h1{
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .articulo0 img{
+    display: no;
+    width: 150px;
+  }
+
+}
+
+
+@media screen and (max-width:800px){
+    .piepagina .g1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
