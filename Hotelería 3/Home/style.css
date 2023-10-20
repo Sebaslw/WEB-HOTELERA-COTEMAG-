@@ -170,14 +170,6 @@ header{
   right: 10px;
 }
 
-
-
-
-
-
-
-
-
 .art1{
   display: flex;
   height: 800px;
@@ -291,6 +283,7 @@ header{
   transition: .5s;
 }
 
+/* Hover en las imagenes */
 
 .grid1:hover,
 .grid2:hover,
@@ -410,6 +403,28 @@ header{
   width: 40%;
   font-size: 22px;
 }
+
+/* Cree un boton para que el usuario pueda ir practiacando en el softwer*/
+.button-wpadmid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: #0f639ec2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px; 
+  margin-left: auto; /* Centra horizontalmente */
+  margin-right: auto; /* Centra horizontalmente */
+}
+.button-wpadmid:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
 .art6 .sec6{
   font-family: lato, sans-serif; 
   display:flex;
@@ -466,7 +481,6 @@ header{
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
- 
 }
 .foo2 ul li{
   padding: 5px;
