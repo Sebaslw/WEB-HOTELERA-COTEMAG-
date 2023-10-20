@@ -405,26 +405,32 @@ header{
 }
 
 /* Cree un boton para que el usuario pueda ir practiacando en el softwer*/
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .button-wpadmid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  font-size: 30px;
-  background-color: #0f639ec2;
+  padding: 20px 35px; /* Reduzco el padding para hacerlo más compacto */
+  font-size: 18px; /* Reduzco el tamaño del texto */
+  background-color: #e0b524;
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  margin-top: 20px; 
-  margin-left: auto; /* Centra horizontalmente */
-  margin-right: auto; /* Centra horizontalmente */
+  text-decoration: none;
+  display: inline-block;
 }
+
 .button-wpadmid:hover {
-  background-color: #2980b9;
-  transform: scale(1.05);
+  background-color: #fff;
+  color:#072235;
+  transform: scale(1.05); /* Aumento ligeramente el tamaño al pasar el cursor */
 }
+
+
 .art6 .sec6{
   font-family: lato, sans-serif; 
   display:flex;
@@ -453,8 +459,6 @@ header{
   justify-content: space-around;
   align-items: center;
   margin-left: -50px;
-  
-  
 }
 .foo ul li{
   background-color: #072235;
@@ -470,7 +474,6 @@ header{
   align-items: center;
   width: 25%;
   height: 100%;
-  
 }
 .foo2{
   font-size: 20px;
