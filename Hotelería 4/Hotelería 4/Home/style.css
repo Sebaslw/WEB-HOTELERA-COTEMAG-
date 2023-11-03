@@ -588,7 +588,7 @@ padding: 1px;
 
 @media (min-width:1500px){
   .content h1{
-    font-size: 40px; 
+    font-size: 60px; 
   }
   .art1{
     height: auto;
@@ -600,23 +600,31 @@ padding: 1px;
     font-size: 30px;
   }
   .art1 .grid{
-    gap: 15px;
+    padding: 40px;
+    width: 95%;
+    height: 70%;
+    gap: 30px;
+    
   } 
+  .art1 .grid0{
+    height: 130px;
+    font-size: 15px;
+  }
 
   .art2{
-    height: 100px;
+    height: 200px;
     display: flex;
     align-items: end;
   }
   .art2 .div2{
-    gap: 50px;
-    height: 100px;
+    gap: 80px;
+    height: 200px;
   }
   .art2 .carda2{
-    font-size: 10px;
-    height: 60px;
-    width: 180px;
-    gap: 50px;
+    font-size: 15px;
+    height: 90px;
+    width: 280px;
+    
   }
   .art3 .sec3{
     display:flex;
