@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Exo+2:wght@500&family=Lato:ital,wght@1,700&family=Orelega+One&family=Roboto&display=swap');
 
 * {
   margin: 0;
@@ -7,15 +7,7 @@
 }
 
 body {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  */
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Mono', monospace;  
+  font-family: 'Lato', sans-serif;
 }
 .volver a{
   text-decoration: none;
@@ -74,8 +66,9 @@ body {
   align-items: center;
   width: 360px;
   height: 480px;
-  background-color: #004e79;
+  backdrop-filter: blur(5rem) ;
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border-radius: 15px;
 }
 
 .wrapper.animate-signup .form-wrapper.sign-in {
@@ -155,7 +148,7 @@ body {
 
 h2 {
   font-size: 30px;
-  color: #d2b862;
+  color: #105c92;
   text-align: center;
 }
 
@@ -171,7 +164,7 @@ h2 {
   left: 5px;
   transform: translateY(-50%);
   font-size: 16px;
-  color: #d2b862;
+  color: #e0b524;
   padding: 0 5px;
   pointer-events: none;
   transition: .5s;
@@ -181,7 +174,7 @@ h2 {
   width: 100%;
   height: 40px;
   font-size: 16px;
-  color: #d2b862;
+  color: #e0b524;
   padding: 0 10px;
   background: transparent;
   border: 1px solid #d2b862;
@@ -193,7 +186,9 @@ h2 {
 .inputs input:valid~label {
   top: 0;
   font-size: 12px;
-  background: #004e79;
+  backdrop-filter: blur(10rem);
+  z-index: 5;
+
 }
 
 .forgot-password {
@@ -201,7 +196,7 @@ h2 {
 }
 
 .forgot-password a {
-  color: #d2b862;
+  color: #e0b524;
   font-size: 14px;
   text-decoration: none;
 }
@@ -241,13 +236,13 @@ h2 {
 }
 
 .sign-link p {
-  color: #d2b862;
+  color: #004e79;
 }
 
 .sign-link p a {
-  color: #d2b862;
+  color: #e0b524;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .sign-link p a:hover {
