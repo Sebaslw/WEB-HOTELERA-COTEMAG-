@@ -371,8 +371,9 @@ header{
 }
 .art3 .sec3{
   display:flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  
 }
 
 .art3 .sec3 .div3{
@@ -380,7 +381,7 @@ header{
   justify-content: center;
   align-items: center;
   height: 300px;
-  width: 40%;
+  width: 35%;
   margin-right: 20px;
   background-color: #08084b;
   color: #e0b524;
@@ -389,9 +390,12 @@ header{
   transition: all ease .8s;
   
 }
-.sec3 .div3:hover{
+.art3 .sec3 .div3:hover{
   transition: all ease .8s;
-  transform: rotate(5deg);
+  transform: rotate(-15deg);
+  border-radius: 100% 100% 100% 100%
+  
+  ;
 }
 
 .art3 .sec3 .div3 h1{
@@ -422,9 +426,9 @@ header{
   padding: 30px;
   font-family: sans-serif; 
 }
-.ola1{
+.art4 .ola1{
   display:flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   background-color: #08084b;
   width: 40%;
@@ -436,9 +440,11 @@ header{
   transition: all ease .8s;
 }
 
-.ola1:hover{
+.art4 .ola1:hover{
+  border-radius: 100% 100%  100% 100%;
   transform: rotate(5deg);
 }
+
 
 .art4 .sec4 .img4 img{
   width: 525px;
@@ -628,7 +634,7 @@ padding: 1px;
   }
   .art3 .sec3{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     
   }
@@ -636,12 +642,12 @@ padding: 1px;
     font-size: 25px;
   }
   .art3 .sec3 .div3{
-  width: 35%;
+  width: 20%;
   margin-right: 10%;
   background-color: #08084b;
   color: #e0b524;
   border-radius: 100% 5% 100% 20px;
-  transform: rotate(-10deg);
+  transform: rotate(10deg);
   transition: all ease .8s; 
   }
   
@@ -657,13 +663,29 @@ padding: 1px;
     padding: 0px;
     font-family: sans-serif; 
   }
-  .ola1{
-    text-align: center;
+  .art4 .ola1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     background-color: #08084b;
-    width: 36%;
+    width: 40%;
     height: 200px;
     border-radius: 20px 100% 20px 100%;
     transform: rotate(-10deg);
+    margin: 0px;
+    transition: all ease .8s;
+}
+   
+  }
+
+  .art4 .ola1:hover{
+    border-radius: 100% 100%  100% 100%;
+    transform: rotate(5deg);
+  }
+  .art4 .sec4 .div4 h1{
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
     
   }
   .art4 .sec4 .img4 img{
@@ -701,7 +723,7 @@ padding: 1px;
     width: 100%;
     margin: 0 auto;
   }
-}
+
 
 @media (max-width:1024px){
   .content h1{
