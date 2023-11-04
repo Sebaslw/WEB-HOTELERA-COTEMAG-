@@ -58,7 +58,7 @@ html, body{
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;
-  background-color: #ffce2c;
+  background-color: #ffc400;
   border-radius: 50px;
   padding: 10px;
      
@@ -207,7 +207,6 @@ header{
   align-self: center;
   grid-auto-rows: minmax(100px, auto);
   padding: 40px;
-  
   width: 100%;
   height: 70%;
   gap: 30px;
@@ -219,12 +218,14 @@ header{
   font-size: 13px;
   border-radius: 10px;
   font-family: lato, sans-serif; 
-  color: #e0b524;
+  color: #ffffff;
+  text-shadow: 10px 10px 5px 10px rgb(255, 0, 0);
   border:solid 1px #e0b524;
   transition: all ease .2s;
 }
 .grid0:hover{
   transform: scale(1.1);
+  color: #e0b524;
 }
 .grid1{ 
   font-family: sans-serif; 
@@ -330,7 +331,7 @@ header{
 .card1:hover{
   background-image: url('https://www.emagister.com/blog/wp-content/uploads/2021/12/GettyImages-622015126.jpg');
   transform: scale(1.1);
-  color: red;
+  color: #ffffff;
   font-size: 20px;
 }
 .card2{
@@ -362,7 +363,7 @@ header{
 .card3:hover{
   background-image: url('https://imgcom.masterd.es/49/blog/2023/02/42474.jpg');
   transform: scale(1.1);
-  color: red;
+  color: #ffffff;
   font-size: 20px;
 }
 .art3{
@@ -580,8 +581,8 @@ footer ul {
 footer ul li a{
   font-size: 30px;
 }
-footer ul li a .fa-instagram{
-background-image: linear-gradient(#cf00e2,#fd00c6,#eb0000,#fffb00);
+footer ul li a i{
+color: #ffffff;
 border-radius: 5px;
 padding: 1px;
 }
