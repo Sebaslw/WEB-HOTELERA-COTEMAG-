@@ -10,20 +10,20 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .volver a{
-  text-decoration: none;
-  font-size: 20px;
+  text-align: center;
+  width: 50px;
+  font-size: 30px;
   position: absolute;
   margin-left: 20px;
   margin-top: 10px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
   color: #ffffff;
-  background-color: #004e79;
+  background-color: #105c92;
   padding: 8px;
   border-radius: 20px;
 }
 .volver a:hover{
-  background-color: #d2b862;
+  background-color: #ffc400;
+  color: #105c92;
 }
 .contenedor {
   display: flex;
